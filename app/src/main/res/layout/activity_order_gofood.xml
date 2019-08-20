@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/linier_gofood"
+    android:layout_height="match_parent"
+    tools:context=".orderGofood">
+
+    <ImageView
+        android:id="@+id/gambarGarpu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/menu_gofood"
+        />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:layout_marginEnd="8dp"
+        android:text="Order Your Food Here!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gambarGarpu" />
+
+    <LinearLayout
+        android:id="@+id/Linier1"
+        android:background="@drawable/linier_gofood"
+        android:layout_margin="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:background="@drawable/edittextshape"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/edit1"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Nama Anda"
+            android:layout_centerInParent="true"
+            />
+
+        <EditText
+            android:id="@+id/edit2"
+
+            android:background="@drawable/edittextshape"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Alamat Anda" />
+
+        <EditText
+            android:id="@+id/edit3"
+
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittextshape"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Pesanan Anda" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnKonfirm"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/costum_button"
+        android:text="Konfirmasi Pesanan"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linier1"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

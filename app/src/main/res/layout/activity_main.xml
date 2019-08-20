@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linier_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoGojek"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/gojekk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/radius"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/logoGojek"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/goRide"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="70dp"
+            android:src="@drawable/menu_goride" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goRide"
+            android:layout_marginStart="90dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="GoRide"
+            />
+
+        <ImageView
+            android:id="@+id/goFood"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@id/goRide"
+            android:src="@drawable/menu_gofood" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goFood"
+            android:layout_marginStart="240dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="GoFood"
+            />
+
+        <ImageView
+            android:id="@+id/goMart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/goFood"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/menu_gomart" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goMart"
+            android:layout_marginStart="90dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="GoMart"
+            />
+
+        <ImageView
+            android:id="@+id/goSend"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/goFood"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/goMart"
+            android:src="@drawable/menu_gosend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goSend"
+            android:layout_marginStart="240dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="GoSend"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
